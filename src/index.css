@@ -23,6 +23,19 @@
   );
 }
 
+.card{
+  @apply bg-white bg-opacity-5;
+
+  padding: 40px;
+  border-radius: 10px;
+
+}
+
+.card:hover{
+  box-shadow: 2px 4px 20px rgba(255, 86, 246, 0.51);
+}
+
+
 .gradient,
 .active {
   background: linear-gradient(
@@ -67,5 +80,8 @@
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  .sectionGrid {
+    @apply m-4 py-8 lg:py-24 lg:h-screen;
   }
 }

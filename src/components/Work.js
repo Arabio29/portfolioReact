@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.js"
 
+
 const Work = () => {
   // Array con los datos de los proyectos
   const projects = [
@@ -18,9 +19,29 @@ const Work = () => {
   ];
 
   return (
-    <div className="section" id="work">
-      <div className="section" id="work">
-      <div className="flex flex-wrap justify-center">
+<>
+<div className="" id="work">
+<div className="sectionGrid">
+      <div className="grid grid-cols-8 gap-4 h-[100v] ">
+        <div className="card col-span-6 row-span-5">1</div>
+        <div className="card col-span-2">2</div>
+        <div className="card col-span-2 row-span-6">3</div>
+        <div className="card col-span-2 row-span-2">4</div>
+        <div className="card col-span-4 row-span-2">5</div>
+        <div className="card">6</div>
+        <div className="card">7</div>
+        <div className="card col-span-2">8</div>
+        <div className="card">9</div>
+      </div>
+    </div>
+
+</div>
+    <div>
+
+    
+     
+
+     {/* <div className="flex flex-wrap justify-center">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
@@ -29,9 +50,10 @@ const Work = () => {
             technologies={project.technologies}
           />
         ))}
-      </div>
+      </div>*/}
+
     </div>
-    </div>
+    </>
   );
 };
 
